@@ -6,7 +6,7 @@ List<Parking> mockParkings = [
     id: '1',
     name: 'Parking Hassan II',
     location: 'Casablanca',
-    imageUrl: 'assets/images/parking1.png', // add this image later
+    imageUrl: 'assets/parking1.jpg', // add this image later
     pricePerHour: 5.0,
     openTime: '08:00',
     closeTime: '22:00',
@@ -20,7 +20,7 @@ List<Parking> mockParkings = [
     id: '2',
     name: 'Parking Marina',
     location: 'Rabat',
-    imageUrl: 'assets/images/parking2.jpeg', // add this image later
+    imageUrl: 'assets/parking2.jpg', // add this image later
     pricePerHour: 4.0,
     openTime: '07:00',
     closeTime: '21:00',

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'home_categories_screen.dart'; // make sure the path is correct
+import 'login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
@@ -10,10 +12,10 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(Duration(seconds: 10) , () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (_) => HomeCategoriesScreen()),
+        MaterialPageRoute(builder: (_) => LoginScreen()),
       );
     });
   }
@@ -21,16 +23,9 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[800],
+      backgroundColor: Colors.white,
       body: Center(
-        child: Text(
-          'Smart Parking',
-          style: TextStyle(
-            fontSize: 28,
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
+        child: Image.asset('assets/logo.jpg', width: 300),
       ),
     );
   }
